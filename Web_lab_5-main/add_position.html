@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Manager</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-add">
+    <div class="container">
+        <header class="header">
+            <nav class="nav__menu">
+                <ul>
+                    <li class="header__nav-items"><a href="">My shoes</a></li>
+                    <li class="header__nav-items"><a href="index.html">All shoes</a></li>
+                    <li class="header__nav-items"><a href="add_position.html">Add shoe</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main__add">
+            <aside class="main__add-aside">
+                <div class="main__add-aside-title">
+                    <p>Create positions</p>
+                </div>
+                <section class="main__add-aside-section">
+                    <h3 class="aside__add-section-title">Create new card</h3>
+                    <form id="add_form" class="form">
+                        <div class="form__group">
+                            <label for="title_input" class="form__label">Title</label>
+                            <input type="text" class="form__input" id="title_input" placeholder="Enter title">
+                        </div>
+                        <div class="form__group">
+                            <label for="size_input" class="form__label">Settings</label>
+                            <input type="text" class="form__input" id="size_input" placeholder="Enter size">
+                            <label for="color_input" class="form__label"></label>
+                            <input type="text" class="form__input" id="color_input" placeholder="Enter color">
+                            <label for="price_input" class="form__label"></label>
+                            <input type="text" class="form__input" id="price_input" placeholder="Enter price">
+                            <label for="imageInput" class="form__label"></label>
+                            <input type="file" class="form__input" id="img_input" accept="image/*">
+                            <img id="preview" alt="Прев’ю" style="max-width: 200px; display: none; margin-top: 10px;">
+                        </div>
+                        <button id="submit_button" type="submit" class="form__button">Submit</button>
+                    </form>
+                </section>
+            </aside>
+            <section class="cards" id="items_container">
+            </section>
+        </main>
+    </div>
+    <script type="module" src="js/add-main.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+html {
+    overflow-y: scroll;
+}
+
+
+body{
+    background: #fff;
+    font-family:"Montserrat", sans-serif, "Arial";
+    color: #091133;
+    font-size: 20px;
+    color: #6f6f6f;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+li{
+    display: block;
+}
+
+p{
+    margin: 0;
+}

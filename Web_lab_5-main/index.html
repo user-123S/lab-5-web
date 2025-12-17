@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="nav__menu">
+                <ul>
+                    <li class="header__nav-items"><a href="">My shoes</a></li>
+                    <li class="header__nav-items"><a href="index.html">All shoes</a></li>
+                    <li class="header__nav-items"><a href="add_position.html">Add shoe</a></li>
+                </ul>
+            </nav>   
+            <div>
+                <input class="header__input" type="text" id="searchInput" placeholder="Type something...">
+                <div class="header__buttons">
+                    <button class="header__button search" id="searchButton">Search</button>
+                    <button class="header__button clear" id="clearButton">Clear</button>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <aside>
+                <div class="main__aside-title">
+                    <p>Manage shoes<p>
+                </div>
+                <div class="main__fist-feature">
+                    <p class="main__aside-text">Sort by most expensive shoes</p>
+                    <label class="switch">
+                        <input type="checkbox" id="sortToggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="main__aside-separator"></div>
+                <div>
+                    <p>Count total price</p>
+                    <button class="main__aside-count-button" id="countButton">Count</button>
+                </div>
+                <div class="main__aside-price-feature">
+                    <p class="main__aside-text-price">Total price: </p>
+                    <p class="main__aside-price">$<span id="total">0</span></p>
+                </div>
+            </aside>
+            <section class="shoes" id="shoe-list">
+            </section>
+        </main>
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
